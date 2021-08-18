@@ -17,6 +17,8 @@ body {
     left: 0;
     height: var(--header-height);
     border-bottom: 1px solid var(--border-color);
+    background-color: var(--white-color);
+    z-index: 99;
 }
 
 .navbar-wrap {
@@ -373,8 +375,8 @@ input[type="search"]::-webkit-search-cancel-button{
     top: 0;
     left: 0;
     bottom: 0;
-    width: 320px;
-    z-index: 1;
+    width: 300px;
+    z-index: 99999999999999999;
     padding: 10px 20px 20px 20px;
     transform: translateX(-100%);
     transition: transform ease 1s;
@@ -487,8 +489,10 @@ input[type="search"]::-webkit-search-cancel-button{
 /*          JUMBO TRON SLIDE            */
 
 .jumbotron {
+
     margin-top: var(--header-height);
     padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 .jumbotron__slide-img {
@@ -496,8 +500,94 @@ input[type="search"]::-webkit-search-cancel-button{
 }
 
 .slide-img {
-
     width: 100%;
     border-radius: 30px;
 }
+
+/*              MAIN CONTENT                 */
+
+.luxstay__greeting {
+    margin-bottom: 45px;
+}
+
+.level1-header {
+    margin: 0;
+    font-size: 2.8rem;
+    color: #222;;
+}
+
+.level2-header {
+    margin: 0;
+    font-size: 2.4rem;
+    color: #222;;
+}
+
+.basic-content {
+    font-size: 1.6rem;
+    color: var(--basic-content-font-color);
+}
+
+.content-row > a {
+    color: var(--basic-content-font-color);
+}
+
+.luxstay-destination__link {
+    width: 100%;
+    display: inline-block;
+}
+
+.luxstay-destination__slide.row {
+    
+}
+
+
+
+.destination-wrap {
+    margin-top: 16px;
+    position: relative;
+}
+
+.destination-cover {
+    position: relative;
+    width: 100%;
+}
+
+.destination-cover:before {
+    content: "";
+    display: block;
+    padding-top: 125%;
+}
+
+
+.luxstay-destination__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.luxstay__destination-name, .luxstay__destination-description {
+    color: white;
+    font-weight: 900;
+}
+
+.luxstay-destination__addition {
+    position: absolute;
+    bottom:10px;
+    left: 10px;
+}
+
+.luxstay__destination-name {
+    font-size: 2.4rem;
+
+}
+
+.luxstay__destination-description {
+    font-size: 1.6rem;
+   
+}
+
 

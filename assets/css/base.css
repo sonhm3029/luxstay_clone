@@ -34,6 +34,17 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    margin-top: 0;
+    line-height: 1.25;
+}
+
+
 
 .overlay {
     position: absolute;
@@ -61,7 +72,7 @@ html {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -2px;
+    margin-left: -2px!important;
     margin-right: -2px;
 }
 
@@ -141,7 +152,7 @@ html {
 @media (min-width: 567px) and (max-width: 767px) {
 
     .row {
-        margin-left: -4px;
+        margin-left: -4px!important;
         margin-right: -4px;
     }
 
@@ -240,8 +251,8 @@ html {
     }
 
     .row {
-        margin-left: 8px;
-        margin-left: 8px;
+        margin-left: -8px!important;
+        margin-right: -8px!important;
     }
 
     .col-md-1,  
@@ -334,10 +345,11 @@ html {
 
 
     .row {
-        margin-left: 12px;
-        margin-left: 12px;
+        margin-left: -8px!important;
+        margin-right: -8px!important;
     }
 
+    .col-xl-2-4,
     .col-lg-1,  
     .col-lg-2,
     .col-lg-3,
@@ -350,8 +362,8 @@ html {
     .col-lg-10,
     .col-lg-11,
     .col-lg-12 {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     .col-lg-0 {
@@ -417,6 +429,11 @@ html {
         max-width: 100%;
     
     }
+
+    .col-lg-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
 }
 
 
@@ -427,10 +444,12 @@ html {
 
 
     .row {
-        margin-left: 12px;
-        margin-left: 12px;
+        margin-left: -8px!important;
+        margin-right: -8px!important;
     }
 
+
+    .col-xl-2-4,
     .col-xl-1,  
     .col-xl-2,
     .col-xl-3,
@@ -443,8 +462,8 @@ html {
     .col-xl-10,
     .col-xl-11,
     .col-xl-12 {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     .col-xl-0 {
@@ -509,5 +528,10 @@ html {
         flex: 0 0 100%;
         max-width: 100%;
     
+    }
+
+    .col-xl-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
     }
 }
