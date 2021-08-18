@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="overlay" id="language-and-currency__overlay"></div>
+    <header class="header">
+        <div class="navbar-wrap container">
+            <div class="navbar__logo-section" id="logo-section--lg">
+                <a href="" class="navbar__logo-link">
+                    <svg version="1.1" viewBox="0 0 50 50" class="svg-icon svg-fill" style="width: 50px; height: 50px;"><path pid="0" d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z"></path></svg>
+                </a>
+            </div>
+            <div class="navbar__search-section">
+                <div class="navbar__search-group">
+                    <div class="navbar__search-items">
+                        <div class="navbar__search-icon" id="search-by-name__icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <input type="search" class="navbar__search-input" placeholder="Tìm kiếm">
+                    </div>
+                    <div class="navbar__search-items">
+                        <div class="navbar__search-icon" id="search-by-date__icon">
+                            <i class="far fa-calendar"></i>
+                        </div>
+                        <span class="search-by-date search-content">Ngày</span>
+                    </div>
+                    <div class="navbar__search-items">
+                        <div class="navbar__search-icon" id="search-by-num-custom__icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <span class="search-by-num-custom search-content">Số khách</span>
+                    </div>
+                    <div class="navbar__search-items" id="search-button">
+                        <div class="navbar__search-icon search-btn">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar__nav-menu-section">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="" class="nav-item__link">Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-item__link">Host</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-item__link">Đăng ký</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-item__link">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item" id="language-and-currency">
+                        <input style="display: none;" type="checkbox" id="language-and-currency__tooltip-opener">
+                        <label for="language-and-currency__tooltip-opener" class="nav-item__country-icon">
+                            <img id="vietnam-icon" src="assets/img/vietnam.svg" alt="">
+                            <span class="vietnam-currency">VND</span>
+                            <i class="fas fa-caret-down"></i>
+                        </label>
+                        <div class="language-and-currency__tooltip">
+                            <div class="language-selection__section">
+                                <div class="language-selection__item">
+                                    <div class="language-selection__icon">
+                                        <img src="assets/img/vietnam.svg" alt="vietnamese">
+                                    </div>
+                                    <a  href="" class="selected-language">Tiếng Việt</a>
+                                </div>
+                                <div class="language-selection__item">
+                                    <div class="language-selection__icon">
+                                        <img src="assets/img/english.svg" alt="english">
+                                    </div>
+                                    <a  href="" class="selected-language">English</a>
+                                </div>
+                                <div class="language-selection__item">
+                                    <div class="language-selection__icon">
+                                        <img src="assets/img/korean.svg" alt="korean">
+                                    </div>
+                                    <a  href="" class="selected-language">Korean</a>
+                                </div>
+                            </div>
+                            <div class="currency-selection__section">
+                                <div class="currency-selection__item"> 
+                                    <a href="" class="selected-currency"><b>VND</b> Việt Nam Đồng</a>
+                                </div>
+                                <div class="currency-selection__item">
+                                    <a href="" class="selected-currency"><b>USD</b> United States Dollars</a>
+                                </div>
+                                <div class="currency-selection__item blank item" style="visibility: hidden;">
+                                   
+                                </div>
+                            </div>
+                            <div class="language-and-currency__tooltip-arrow">
+
+                            </div>
+                        </div>
+                        <!-- <div class="language-and-currency__tooltip-arrow">
+
+                        </div> -->
+                        
+                    </li>
+                </ul>
+                <div class="navbar-toggle__btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+        <div class="navbar__menu-toggle--md">
+            <div class="navbar__logo-section" id="logo-section--md">
+                <a href="" class="navbar__logo-link">
+                    <svg version="1.1" viewBox="0 0 50 50" class="svg-icon svg-fill" style="width: 50px; height: 50px;"><path pid="0" d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z"></path></svg>
+                </a>
+            </div>
+            <ul id="nav-menu--md">
+                <li class="nav-item--md">
+                    <a href="" class="nav-link--md">
+                        Guide
+                    </a>  
+                </li>
+                <li class="nav-item--md">
+                    <a href="" class="nav-link--md">
+                        Host
+                    </a>  
+                </li>
+                <li class="nav-item--md">
+                    <a href="" class="nav-link--md">
+                        Đăng ký
+                    </a>  
+                </li>
+                <li class="nav-item--md">
+                    <a href="" class="nav-link--md">
+                        Đăng nhập
+                    </a>  
+                </li>
+                <li class="nav-item--md language-and-currency">
+                    <input style="display: none;" type="checkbox" id="language-and-currency__tooltip-opener--md">
+                    <label for="language-and-currency__tooltip-opener--md" class="nav-item__country-icon--md">
+                        <div class="country-icon-wrap">
+                            <img id="vietnam-icon" src="assets/img/vietnam.svg" alt="vietnam-icon">
+                            <span class="vietnam-currency">VND</span>
+                        </div>
+                        <i class="fas fa-caret-down"></i>
+                    </label>
+                    <div class="language-and-currency__tooltip lac-tooltip--md">
+                        <div class="language-selection__section">
+                            <div class="language-selection__item">
+                                <div class="language-selection__icon">
+                                    <img src="assets/img/vietnam.svg" alt="vietnamese">
+                                </div>
+                                <a  href="" class="selected-language">Tiếng Việt</a>
+                            </div>
+                            <div class="language-selection__item">
+                                <div class="language-selection__icon">
+                                    <img src="assets/img/english.svg" alt="english">
+                                </div>
+                                <a  href="" class="selected-language">English</a>
+                            </div>
+                            <div class="language-selection__item">
+                                <div class="language-selection__icon">
+                                    <img src="assets/img/korean.svg" alt="korean">
+                                </div>
+                                <a  href="" class="selected-language">Korean</a>
+                            </div>
+                        </div>
+                        <div class="currency-selection__section">
+                            <div class="currency-selection__item"> 
+                                <a href="" class="selected-currency"><b>VND</b> Việt Nam Đồng</a>
+                            </div>
+                            <div class="currency-selection__item">
+                                <a href="" class="selected-currency"><b>USD</b> United States Dollars</a>
+                            </div>
+                            <div class="currency-selection__item blank item" style="visibility: hidden;">
+                               
+                            </div>
+                        </div>
+                        <div class="language-and-currency__tooltip-arrow">
+
+                        </div>
+                    </div>
+                    <!-- <div class="language-and-currency__tooltip-arrow">
+
+                    </div> -->
+                    
+                </li>
+            </ul>
+            <button class="close-menu-toggle">
+                &times;
+            </button>
+        </div>
+        <div class="navbar__menu-overlay overlay"></div>
+    <div class="jumbotron container">
+        <div class="jumbotron__slide">
+            <a href="" class="jumbotron__slide-img">
+                <img class="slide-img" src="assets/img/jumbotron-slide-0.png" alt="slide-0">
+            </a>
+        </div>
+        <div class="jumbotron__slide"></div>
+    </div>
+    <div class="main-content"></div>
+    <footer class="footer"></footer>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
