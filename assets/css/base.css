@@ -20,7 +20,7 @@
     --navbar-font-weigth: 700;
     --border-color: #f2f2f2;
     --boundary-color:#e7e7e7;
-
+    --footer--basic-font-color:var(--black-color-rgba7);
     --header-height: 80px;
 }
 
@@ -29,13 +29,16 @@
 }
 
 html {
+    line-height: 1.5;
     font-size: 62.5%;
-    line-height: 1.6rem;
+    /* line-height: 1.6rem; */
     font-family: 'Roboto', sans-serif;
 }
 
 body {
     position: relative;
+    /* position: relative;
+    height: 100%; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -349,7 +352,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-right: -8px!important;
     }
 
-    .col-xl-2-4,
+    .col-lg-2-4,
     .col-lg-1,  
     .col-lg-2,
     .col-lg-3,

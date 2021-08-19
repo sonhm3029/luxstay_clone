@@ -12,9 +12,7 @@ body {
 
 .header {
     position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
+    width: 100%;
     height: var(--header-height);
     border-bottom: 1px solid var(--border-color);
     background-color: var(--white-color);
@@ -363,9 +361,13 @@ input[type="search"]::-webkit-search-cancel-button{
 }
 
 .navbar__menu-overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: none;
     position: absolute;
-    z-index: 0;
+    z-index: 100;
     transition: display ease 1s;
 }
 
@@ -486,25 +488,71 @@ input[type="search"]::-webkit-search-cancel-button{
 }
 
 
-/*          JUMBO TRON SLIDE            */
+/*          JUMBOTRON SLIDE            */
 
 .jumbotron {
-
-    margin-top: var(--header-height);
-    padding-top: 45px;
+    position: relative;
+    padding-top: calc(var(--header-height) + 45px);
+    /* padding-top: 45px; */
     padding-bottom: 45px;
 }
 
 .jumbotron__slide-img {
+    /* position: relative; */
+    /* position: absolute; */
+    /* padding-top: 125%; */
     display: block;
 }
 
+/* .jumbotron__slide-img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    padding-top: 125%;
+} */
+
 .slide-img {
+    object-fit: cover;
     width: 100%;
     border-radius: 30px;
 }
 
+.jumbotron__slide {
+    display: none;
+}
+
+.slide--active {
+    display: block;
+}
+
+
+.jumbotron__slide-dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 92%;
+    bottom: 20%;
+}
+
+.dots {
+    content: "";
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.2);
+    margin-left: 4px;
+}
+
+.dots--active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 /*              MAIN CONTENT                 */
+
+.main-content {
+    margin-bottom: 50px;
+}
 
 .luxstay__greeting {
     margin-bottom: 45px;
@@ -531,7 +579,11 @@ input[type="search"]::-webkit-search-cancel-button{
     color: var(--basic-content-font-color);
 }
 
-.luxstay-destination__link {
+.luxstay-top-destination__section {
+    margin-bottom: 45px;
+}
+
+.image-link {
     width: 100%;
     display: inline-block;
 }
@@ -542,24 +594,24 @@ input[type="search"]::-webkit-search-cancel-button{
 
 
 
-.destination-wrap {
+.img-wrap {
     margin-top: 16px;
     position: relative;
 }
 
-.destination-cover {
+.img-cover {
     position: relative;
     width: 100%;
 }
 
-.destination-cover:before {
+.img-cover:before {
     content: "";
     display: block;
     padding-top: 125%;
 }
 
 
-.luxstay-destination__img {
+.img-section {
     position: absolute;
     top: 0;
     left: 0;
@@ -591,3 +643,160 @@ input[type="search"]::-webkit-search-cancel-button{
 }
 
 
+/* Luxstay promotion */
+
+.luxstay-promotions__section {
+    margin-bottom: 45px;
+}
+
+#promotion-viewmore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.luxstay-promotion__view-more-link {
+    display: none;
+    text-decoration: none;
+    color: var(--hover-font-color);
+}
+
+/* Luxstay rest at ho chi minh city */
+
+.luxstay-rest-at-hcm__description {
+
+}
+
+
+.hcm__description-in-short {
+    color: #555;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.hcm__description-details{
+    cursor: pointer;
+    color: #555;
+    font-size: 1.6rem;
+}
+
+.hcm__description-details:hover {
+    color: var(--hover-font-color);
+}
+
+/* luxstay payment instruction */
+
+.luxstay-payment-instruction__section {
+    margin-bottom: 45px;
+}
+
+/* luxstay app about */
+
+#luxstay-app-about {
+    
+}
+
+.luxstay-app__logo {
+    margin-bottom: 18px;
+    width: 150px;
+}
+
+.luxstay-app__intro-heading {
+    margin-bottom: 24px;
+    font-size: 2rem;
+}
+
+.luxstay-app__intro-content {
+    font-size: 1.6rem;
+    color: var(--black-color-rgba7);
+    margin-bottom: 16px;
+}
+
+.luxstay-app__install-method {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.luxstay-app__install-items {
+    flex: 1;
+    border: none;
+}
+
+#install-qr-code {
+    display: inline-block;
+    padding: 12px;
+    border: 1px solid var(--black-color-rgba1);
+}
+
+#install-qr-img {
+    width: 180px;
+    max-width: 100%;
+}
+
+
+
+.app-looking__image {
+    width: 707px;
+    max-width: 100%;
+}
+
+#install-apps {
+    display: flex;
+    align-items: center;
+}
+
+.install-apps__items {
+    flex: 0 0 50%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 18px;
+}
+
+.install-apps__link {
+}
+
+.install-apps__link > img {
+    width: 100%;
+}
+
+
+
+
+
+/*                  Footer                   */
+
+.luxstay-footer__logo {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.luxstay-footer__logo > svg {
+    width: 170px;
+    height: 35px;
+}
+
+.luxstay-footer-about__connection {
+
+}
+
+.luxstay-connection__items {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.connection-items__content {
+    margin-left: 8px;
+    font-size: 1.4rem;
+}
+.connection-items__content >a {
+    display: block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.connection-items__content >a:hover {
+    color: var(--hover-font-color);
+}

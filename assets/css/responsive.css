@@ -22,9 +22,30 @@
         display: block;
     }
 
+    .slide-img {
+        border-radius: 0;
+    }
+
+    .jumbotron__slide-dots {
+        left: 90%;
+        bottom: 25%;
+    }
+
+    .dot {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
 }
 
 @media (max-width: 767px) {
+
+    .container {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+
     .nav-menu {
         display: none;
     }
@@ -39,17 +60,67 @@
     .navbar__search-items:nth-child(2), .navbar__search-items:nth-child(3) {
         display: none;
     }
+
+
+    .payment-cover::before {
+        padding-top: 48%;
+    }
+
+    .hcm-cover::before {
+        padding-top: 50%;
+    }
+
+    .promotion-cover::before {
+        padding-top: 48%
+    }
+
+    #install-apps > .row {
+        flex-direction: column;
+    }
+
+    .luxstay-app__install-method {
+        flex-direction: row-reverse;
+    }
+    #install-qr-code {
+        display: none;
+    }
+
+}
+
+@media(min-width: 768px) {
+
+
+    .payment-cover::before {
+        padding-top: 60%;
+    }
+
+    .hcm-cover::before {
+        padding-top: 60%;
+    }
+    .promotion-cover::before {
+        padding-top: 43.71585%;
+    }
+
+    .container {
+        max-width: 850px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .luxstay-app__logo {
+        width:343px;
+    }
+
+    .luxstay-app__intro-heading {
+        font-size: 3rem;
+    }
 }
 
 
 
 @media (min-width: 768px) and (max-width: 998px) {
 
-    .container {
-        max-width: 800px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+    
 
     .navbar__search-group {
         flex: 1;
@@ -65,9 +136,23 @@
 
     
 
-    
 
 
+
+}
+
+
+
+@media (min-width: 900px) {
+    .luxstay-promotion__view-more-link {
+        display: inline-block;
+    }
+
+    .container {
+        max-width: 900px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 @media (max-width: 998px) {
@@ -82,6 +167,7 @@
 
 @media (min-width: 999px) and (max-width: 1199px) {
     .container {
+        max-width: 1200px;
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -94,6 +180,13 @@
 
 
 @media(min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        /* margin-left: 12px;
+        margin-right: 12px; */
+        margin-right: auto;
+        margin-left: auto;
+    }
     .navbar-toggle__btn {
         display: none;
     }
