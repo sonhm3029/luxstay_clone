@@ -800,3 +800,131 @@ input[type="search"]::-webkit-search-cancel-button{
 .connection-items__content >a:hover {
     color: var(--hover-font-color);
 }
+
+.footer-section:first-child {
+    flex: 1;
+}
+
+.footer-section {
+    margin-bottom: 32px;
+}
+
+
+.footer-section__heading {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-section__row-content {
+    display: block;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+.footer-section__row-content:hover {
+    color: var(--hover-font-color);
+}
+
+
+.footer-install__section{
+    display: flex;
+    align-items: flex-start;
+    /* margin-top: 32px; */
+
+}
+
+.footer-install__qr-code {
+    flex: 1;
+    padding-right: 8px;
+    
+}
+
+.footer__qr-code-wrap {
+    padding: 12px 12px 12px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-install__store   {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.footer-install__store > a {
+    margin-bottom: 18px;
+}
+
+
+#international-payment {
+    margin-left: 20%;
+    flex: 0 0 40%;
+    margin-bottom: 32px;
+}
+
+
+
+
+.international-payment__icon {
+    display: flex;
+
+}
+
+.certification__icon {
+    display: flex;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.certification__link {
+    flex: 1;
+    display: block;
+    padding: 0px 8px 0px 8px;
+}
+
+.certification__icon  img {
+    width: 80%;
+}
+
+
+.follow-community__icon {
+    display: flex;
+}
+
+.community__link {
+    margin-right: 16px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 2.8rem;
+    color: var(--black-color-rgba9);
+    text-decoration: none   ;
+    border-radius: 50%;
+}
+
+.community__link > i {
+    border-radius: 50%;
+}
+
+
+#certificate {
+    margin-bottom: 32px;
+}
+
+
+/* Last footer */
+
+.luxstay-location-and-information {
+    font-size: 1.4rem;
+    color: var(--black-color-rgba4);
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding-top: 24px;
+    border-top: 1px solid var(--boundary-color);
+}

@@ -30,6 +30,10 @@
         padding-top: calc(var(--header-height) + 10px);
     }
 
+    .col-xs-0 {
+        display: none;
+    }
+
     /* .jumbotron__slide-img, .jumbotron__slide-img > img {
         height: 100px;
     } */
@@ -125,6 +129,11 @@
     .luxstay-app__intro-heading {
         font-size: 3rem;
     }
+
+
+    .international-payment__icon > img {
+        width: 30%;
+    }
 }
 
 
@@ -170,6 +179,14 @@
     .language-and-currency__tooltip-arrow {
         right:5%;
     }
+
+    .footer-install__qr-code {
+        display: none;
+    }
+
+    #international-payment {
+        margin-left: 0px;
+    }
 }
 
 
@@ -187,6 +204,10 @@
         display: none;
     }
 
+    .international-payment__icon > img {
+        width: 100px;
+    }
+
 }
 
 
@@ -200,5 +221,10 @@
     }
     .navbar-toggle__btn {
         display: none;
+    }
+
+
+    .international-payment__icon > img {
+        width: 100px;
     }
 }
