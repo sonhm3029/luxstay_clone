@@ -26,6 +26,16 @@
         border-radius: 0;
     }
 
+    .jumbotron{
+        padding-top: calc(var(--header-height) + 10px);
+    }
+
+    /* .jumbotron__slide-img, .jumbotron__slide-img > img {
+        height: 100px;
+    } */
+
+    
+
     .jumbotron__slide-dots {
         left: 90%;
         bottom: 25%;
@@ -35,6 +45,7 @@
         width: 0.6rem;
         height: 0.6rem;
     }
+
 
 }
 
