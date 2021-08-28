@@ -581,6 +581,7 @@ input[type="search"]::-webkit-search-cancel-button{
 
 .luxstay-top-destination__section {
     margin-bottom: 45px;
+    overflow: hidden;
 }
 
 .image-link {
@@ -589,8 +590,14 @@ input[type="search"]::-webkit-search-cancel-button{
 }
 
 .luxstay-destination__slide.row {
+    flex-wrap: nowrap;
+    /* overflow: scroll; */
     
 }
+
+/* .luxstay-destination__slide.row::-webkit-scrollbar {
+    display: none;
+} */
 
 
 
@@ -647,6 +654,7 @@ input[type="search"]::-webkit-search-cancel-button{
 
 .luxstay-promotions__section {
     margin-bottom: 45px;
+    overflow: hidden;
 }
 
 #promotion-viewmore {
@@ -661,8 +669,20 @@ input[type="search"]::-webkit-search-cancel-button{
     color: var(--hover-font-color);
 }
 
+.luxstay-promotions__slide {
+    flex-wrap: nowrap;
+}
+
 /* Luxstay rest at ho chi minh city */
 
+
+.luxstay-rest-at-hcm__section {
+    overflow: hidden;
+}
+
+.luxstay-rest-at-hcm__slide {
+    flex-wrap: nowrap;
+}
 .luxstay-rest-at-hcm__description {
 
 }
@@ -690,6 +710,11 @@ input[type="search"]::-webkit-search-cancel-button{
 
 .luxstay-payment-instruction__section {
     margin-bottom: 45px;
+    overflow: hidden;
+}
+
+.luxstay-payment__slide {
+    flex-wrap: nowrap;
 }
 
 /* luxstay app about */
@@ -927,4 +952,44 @@ input[type="search"]::-webkit-search-cancel-button{
     margin-bottom: 45px;
     padding-top: 24px;
     border-top: 1px solid var(--boundary-color);
+    
 }
+
+
+
+
+
+/* #da-lat-slider {
+    animation: slideLeft ease 10s forwards;
+    
+}
+
+#ha-noi-slider {
+    animation: slideLeft ease 10s forwards;
+} */
+
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-227.198px);
+    }
+}
+
+@keyframes slideRight {
+    /* from {
+        transform: translateX(0);
+    } */
+
+    to {
+        transform: translateX(227.198px);
+    }
+}
+
+
+/* .luxstay-destination__slide.row {
+    scroll-behavior: smooth;
+} */
